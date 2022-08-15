@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="maestra.master.vb" Inherits="Proyecto_con_Base_de_Datos.maestra" %>
+
+<!DOCTYPE html>
+
+<html style="font-family: arial"">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style1 > tr{
+            border: 1px solid white;
+            border-radius: 1.5rem;
+        }
+        .country {
+            width: 288px;
+            text-align: center;
+            font-size: 25px;
+            color: #A93226;
+            background-color: #16A085;
+            font-weight: bold;
+        }
+        .header {
+            text-align: center;
+            background-color: #16A085;
+            color: #273746;
+            font-size: 40px;
+            font-weight: bolder
+        }
+        .auto-style4 {
+            width: 288px;
+            height: 23px;
+            text-align: center;
+        }
+        .auto-style5 {
+            width: 288px;
+            text-align: center;
+        }
+        .auto-style6 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1" border="1">
+                <tr>
+                    <td class="country">
+                        Colombia
+                    </td>
+                    <td class="header">Sistema de control de personas</td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                        Menú de navegación</td>
+                    <td rowspan="5">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style6">
+                        <a style="text-decoration:none; color: #090909" href="/Páginas/persona.aspx">Persona</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6">
+                        <a style="text-decoration:none; color: #090909" href="/Páginas/ciudad.aspx">Ciudad</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">
+                        <a style="text-decoration:none; color: #090909" href="/Páginas/tipodoc.aspx">Tipo de documento</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center; background: #45B39D">Developed by Jaider Cortes from ADSI Tunja</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
